@@ -1,0 +1,51 @@
+.Textarea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &-label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  }
+
+  &-field {
+    font-family: SB Sans Interface, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    resize: none;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.48);
+    }
+  }
+
+  &-tip {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.48);
+  }
+
+  &-error {
+    font-size: 12px;
+    line-height: 16px;
+    color: red;
+  }
+
+  &-count {
+    position: absolute;
+    right: 15px;
+    bottom: 35px;
+    z-index: 2;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.48);
+  }
+}

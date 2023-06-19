@@ -1,0 +1,33 @@
+.CheckboxGroup {
+  display: flex;
+  flex-direction: column;
+
+  &-label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  }
+
+  &-checkbox {
+    &-label {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+    }
+
+    &-input {
+      cursor: pointer;
+    }
+  }
+
+  &-error {
+    font-size: 12px;
+    line-height: 16px;
+    color: red;
+  }
+}

@@ -1,0 +1,80 @@
+.Select {
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (max-width: 410px) {
+    width: 280px;
+  }
+
+  &-field {
+    padding: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.48);
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('shared/assets/Chevron Down.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 20px auto, 100%;
+    cursor: pointer;
+
+    &-options {
+      width: 300px;
+      display: none;
+      position: absolute;
+      bottom: -50px;
+      padding: 12px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+      background-color: #fff;
+      border-radius: 4px;
+      z-index: 2;
+
+      &-opened {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+
+    &-option {
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+      cursor: pointer;
+      list-style: none;
+      transition: background-color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: #f4f4f5;
+      }
+    }
+  }
+
+  &-label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  }
+
+  &-tip {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.48);
+    position: relative;
+    z-index: 1;
+  }
+
+  &-error {
+    font-size: 12px;
+    line-height: 16px;
+    color: red;
+  }
+}

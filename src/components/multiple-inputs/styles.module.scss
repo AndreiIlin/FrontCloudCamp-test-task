@@ -1,0 +1,11 @@
+.MultipleInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &-label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  }
+}

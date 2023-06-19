@@ -1,0 +1,54 @@
+.Input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &-field {
+    padding: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.48);
+    }
+
+    &-normal {
+      width: 300px;
+      background: #ffffff;
+
+      @media (max-width: 410px) {
+        width: 280px;
+      }
+    }
+
+    &-large {
+      width: 400px;
+      background: rgba(0, 0, 0, 0.04);
+
+      @media (max-width: 620px) {
+        width: 300px;
+      }
+    }
+  }
+
+  &-label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+  }
+
+  &-tip {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.48);
+  }
+
+  &-error {
+    font-size: 12px;
+    line-height: 16px;
+    color: red;
+  }
+}

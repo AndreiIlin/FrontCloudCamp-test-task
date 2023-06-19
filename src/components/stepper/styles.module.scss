@@ -1,0 +1,39 @@
+.Stepper {
+  height: 8px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+
+  &-indicator {
+    height: 100%;
+    width: 0;
+    background: #5558fa;
+    transition: width 0.5s linear;
+
+    &-start {
+      width: 0;
+    }
+
+    &-middle {
+      width: 48%;
+    }
+
+    &-end {
+      width: 100%;
+    }
+  }
+}
+
+.first {
+  top: -4px;
+}
+
+.second {
+  top: -4px;
+  left: 46%;
+}
+
+.third {
+  right: 0;
+  top: -4px;
+}

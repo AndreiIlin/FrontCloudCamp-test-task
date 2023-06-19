@@ -1,0 +1,19 @@
+.Social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s ease-in-out;
+
+  &-link {
+    font-size: 12px;
+    line-height: 16px;
+    color: #5558fa;
+    text-decoration: none;
+
+    &:hover {
+      color: #2226f3ff;
+    }
+  }
+}

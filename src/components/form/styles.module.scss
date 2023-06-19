@@ -1,0 +1,28 @@
+.Form {
+  &-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &-mt {
+      &-small {
+        margin-top: 20px;
+      }
+
+      &-normal {
+        margin-top: 48px;
+      }
+
+      &-large {
+        margin-top: 64px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.MainLayout {
+  margin-top: 24px;
+  background: #ffffff;
+  border-radius: 12px 12px 0px 0px;
+
+  &-padding {
+    &-small {
+      padding: 25px 24px 291px;
+    }
+
+    &-normal {
+      padding: 62px 100px 80px;
+
+      @media (max-width: 610px) {
+        padding: 62px 40px 80px;
+      }
+
+      @media (max-width: 410px) {
+        padding: 62px 20px 80px;
+      }
+    }
+  }
+}

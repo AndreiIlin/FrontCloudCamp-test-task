@@ -1,0 +1,40 @@
+.MyInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 24px;
+
+  &-avatar {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    line-height: 52px;
+    background: #d5e4f7;
+    border-radius: 100px;
+  }
+
+  &-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &-socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 16px;
+  }
+}
