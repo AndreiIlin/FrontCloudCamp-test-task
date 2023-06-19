@@ -9,6 +9,9 @@ export const validationSchema = Yup.object().shape({
   phone: Yup.string()
     .matches(DIGITS_REG_EXP, 'Номер должен состоять только из цифр')
     .test('len', 'Номер должен состоять из 10 цифр', (val) => {
+      if (!val) {
+        return true;
+      }
       const onlyDigitsValLength = val?.replace(/\D/g, '').length;
 
       return onlyDigitsValLength === 11;
